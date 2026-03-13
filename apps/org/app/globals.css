@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05070c;
+  --foreground: #f5f7ff;
+  --card: #10131a;
+  --card-foreground: #f5f7ff;
+  --popover: #10131a;
+  --popover-foreground: #f5f7ff;
+  --primary: #3b82f6;
+  --primary-foreground: #f8fbff;
+  --secondary: #1c2330;
+  --secondary-foreground: #f2f5ff;
+  --muted: #181e2b;
+  --muted-foreground: #9aa4b2;
+  --accent: #1f2a3f;
+  --accent-foreground: #f2f5ff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #252b37;
+  --input: #202633;
+  --ring: #4d88ff;
+  --radius: 0.8rem;
+}
+
+:root[data-theme="light"] {
+  --background: #f2f6fd;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --secondary: #e2e8f0;
+  --secondary-foreground: #0f172a;
+  --muted: #edf2fa;
+  --muted-foreground: #64748b;
+  --accent: #e2e8f0;
+  --accent-foreground: #0f172a;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #cbd5e1;
+  --input: #cbd5e1;
+  --ring: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 700px at 85% -20%, #1a2750 0%, transparent 45%),
+    radial-gradient(1000px 700px at -10% 120%, #0d1e3f 0%, transparent 45%),
+    var(--background);
+  color: var(--foreground);
+}
+
+:root[data-theme="light"] body {
+  background:
+    radial-gradient(1200px 700px at 85% -20%, #cddcff 0%, transparent 45%),
+    radial-gradient(1000px 700px at -10% 120%, #dce8ff 0%, transparent 45%),
+    var(--background);
+}
+
+:root[data-theme="light"] .border-white\/10 {
+  border-color: rgba(15, 23, 42, 0.14) !important;
+}
+
+:root[data-theme="light"] .bg-white\/5 {
+  background-color: rgba(15, 23, 42, 0.04) !important;
+}
+
+:root[data-theme="light"] .bg-zinc-900\/70 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+:root[data-theme="light"] .bg-zinc-950\/70,
+:root[data-theme="light"] .bg-zinc-950\/40 {
+  background-color: rgba(248, 250, 252, 0.95) !important;
+}
+
+:root[data-theme="light"] .bg-zinc-900,
+:root[data-theme="light"] .bg-zinc-800 {
+  background-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] .border-zinc-800\/80,
+:root[data-theme="light"] .border-zinc-700,
+:root[data-theme="light"] .border-zinc-600 {
+  border-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .text-white,
+:root[data-theme="light"] .text-white\/90,
+:root[data-theme="light"] .text-zinc-100,
+:root[data-theme="light"] .text-zinc-200 {
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .text-zinc-400,
+:root[data-theme="light"] .text-zinc-500 {
+  color: #64748b !important;
+}
+
+:root[data-theme="light"] .hover\:bg-zinc-800:hover,
+:root[data-theme="light"] .hover\:bg-zinc-700:hover {
+  background-color: #cbd5e1 !important;
+}
+
+:root[data-theme="light"] .hover\:border-zinc-500:hover {
+  border-color: #94a3b8 !important;
+}
+
+.brand-logo-light {
+  display: none;
+}
+
+:root[data-theme="light"] .brand-logo-dark {
+  display: none;
+}
+
+:root[data-theme="light"] .brand-logo-light {
+  display: block;
+}

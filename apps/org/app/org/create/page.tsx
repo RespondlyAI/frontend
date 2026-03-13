@@ -241,7 +241,7 @@ export default function CreateOrganizationWizardPage() {
             <div className="mx-auto flex w-full max-w-4xl items-center justify-between gap-3">
               <div>
                 {step === 1 ? (
-                  <Button type="button" variant="outline" onClick={() => router.push("/dashboard/owner")}>
+                  <Button type="button" variant="outline" onClick={() => router.push("/login")}>
                     Cancel
                   </Button>
                 ) : null}

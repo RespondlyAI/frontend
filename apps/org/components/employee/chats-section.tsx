@@ -29,7 +29,9 @@ export function ChatsSection() {
               </div>
               <span className="text-xs text-slate-500">{chat.time}</span>
             </div>
-            <p className="mt-1 text-sm text-slate-400">\"{chat.message}\"</p>
+            <p className="mt-1 text-sm text-slate-400">
+              &ldquo;{chat.message}&rdquo;
+            </p>
           </div>
         ))}
       </div>

@@ -26,7 +26,8 @@ export function MemberCard({ member, onRemove }: MemberCardProps) {
         </div>
         <div>
           <p className="text-sm font-medium text-foreground">{member.username}</p>
-          <p className="text-xs text-muted-foreground">{member.role}</p>
+          <p className="text-xs text-muted-foreground">{member.email}</p>
+          <p className="text-xs text-muted-foreground/80">{member.role}</p>
         </div>
       </div>
 

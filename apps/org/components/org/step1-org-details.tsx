@@ -32,6 +32,7 @@ export function Step1OrgDetails({ data, errors, onFieldChange }: Step1Props) {
   const [domains, setDomains] = useState<DomainOption[]>([])
   const [companyTypes, setCompanyTypes] = useState<SelectOption[]>([])
   const [memberSizes, setMemberSizes] = useState<SelectOption[]>([])
+  const domainError = errors.domainCategory ?? errors.domain
 
   useEffect(() => {
     let mounted = true
@@ -119,7 +120,7 @@ export function Step1OrgDetails({ data, errors, onFieldChange }: Step1Props) {
             />
           ) : null}
 
-          {errors.domain ? <p className="text-xs text-red-400">{errors.domain}</p> : null}
+          {domainError ? <p className="text-xs text-red-400">{domainError}</p> : null}
         </div>
 
         <div className="space-y-1.5">
@@ -130,6 +131,7 @@ export function Step1OrgDetails({ data, errors, onFieldChange }: Step1Props) {
             onChange={(e) => onFieldChange("description", e.target.value)}
             placeholder="Briefly describe your organization..."
           />
+          {errors.description ? <p className="text-xs text-red-400">{errors.description}</p> : null}
         </div>
 
         <div className="space-y-1.5">
@@ -160,6 +162,7 @@ export function Step1OrgDetails({ data, errors, onFieldChange }: Step1Props) {
               ))}
             </SelectContent>
           </Select>
+          {errors.companyType ? <p className="text-xs text-red-400">{errors.companyType}</p> : null}
         </div>
 
         <div className="space-y-1.5">
@@ -179,6 +182,7 @@ export function Step1OrgDetails({ data, errors, onFieldChange }: Step1Props) {
               ))}
             </SelectContent>
           </Select>
+          {errors.memberSize ? <p className="text-xs text-red-400">{errors.memberSize}</p> : null}
         </div>
       </div>
     </div>

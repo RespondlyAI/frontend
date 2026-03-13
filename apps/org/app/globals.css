@@ -115,6 +115,14 @@ body {
   background-color: #cbd5e1 !important;
 }
 
+:root[data-theme="light"] .hover\:bg-zinc-900\/80:hover {
+  background-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
 :root[data-theme="light"] .hover\:border-zinc-500:hover {
   border-color: #94a3b8 !important;
 }
@@ -129,4 +137,56 @@ body {
 
 :root[data-theme="light"] .brand-logo-light {
   display: block;
+}
+
+:root[data-theme="light"] .dashboard-theme {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .bg-black,
+:root[data-theme="light"] .dashboard-theme .bg-black\/70,
+:root[data-theme="light"] .dashboard-theme .bg-black\/80 {
+  background-color: #ffffff !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .bg-zinc-950\/70,
+:root[data-theme="light"] .dashboard-theme .bg-zinc-950\/60,
+:root[data-theme="light"] .dashboard-theme .bg-zinc-900\/70,
+:root[data-theme="light"] .dashboard-theme .bg-zinc-900\/60,
+:root[data-theme="light"] .dashboard-theme .bg-zinc-900,
+:root[data-theme="light"] .dashboard-theme .bg-zinc-800 {
+  background-color: #f8fafc !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .bg-emerald-950\/70 {
+  background-color: rgba(16, 185, 129, 0.14) !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .bg-blue-950\/70 {
+  background-color: rgba(59, 130, 246, 0.14) !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .bg-amber-950\/70 {
+  background-color: rgba(245, 158, 11, 0.18) !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .bg-red-950\/70 {
+  background-color: rgba(239, 68, 68, 0.14) !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .border-zinc-900,
+:root[data-theme="light"] .dashboard-theme .border-zinc-800,
+:root[data-theme="light"] .dashboard-theme .border-zinc-700 {
+  border-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .text-zinc-100,
+:root[data-theme="light"] .dashboard-theme .text-white {
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .dashboard-theme .text-zinc-500,
+:root[data-theme="light"] .dashboard-theme .text-zinc-400 {
+  color: #64748b !important;
 }

@@ -24,7 +24,7 @@
 }
 
 :root[data-theme="light"] {
-  --background: #f2f6fd;
+  --background: #ffffff;
   --foreground: #111827;
   --card: #ffffff;
   --card-foreground: #111827;
@@ -64,10 +64,7 @@ body {
 }
 
 :root[data-theme="light"] body {
-  background:
-    radial-gradient(1200px 700px at 85% -20%, #cddcff 0%, transparent 45%),
-    radial-gradient(1000px 700px at -10% 120%, #dce8ff 0%, transparent 45%),
-    var(--background);
+  background: var(--background);
 }
 
 :root[data-theme="light"] .border-white\/10 {
@@ -188,5 +185,64 @@ body {
 
 :root[data-theme="light"] .dashboard-theme .text-zinc-500,
 :root[data-theme="light"] .dashboard-theme .text-zinc-400 {
+  color: #64748b !important;
+}
+
+:root[data-theme="light"] .org-create-theme {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .org-create-theme .bg-zinc-950,
+:root[data-theme="light"] .org-create-theme .bg-zinc-950\/80,
+:root[data-theme="light"] .org-create-theme .bg-zinc-950\/70,
+:root[data-theme="light"] .org-create-theme .bg-zinc-950\/60,
+:root[data-theme="light"] .org-create-theme .bg-zinc-950\/40,
+:root[data-theme="light"] .org-create-theme .bg-zinc-900,
+:root[data-theme="light"] .org-create-theme .bg-zinc-900\/80,
+:root[data-theme="light"] .org-create-theme .bg-zinc-900\/70,
+:root[data-theme="light"] .org-create-theme .bg-zinc-900\/60,
+:root[data-theme="light"] .org-create-theme .bg-zinc-900\/40 {
+  background-color: #ffffff !important;
+}
+
+:root[data-theme="light"] .org-create-theme .border-zinc-800,
+:root[data-theme="light"] .org-create-theme .border-zinc-700,
+:root[data-theme="light"] .org-create-theme .border-zinc-600 {
+  border-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] .org-create-theme .text-zinc-100,
+:root[data-theme="light"] .org-create-theme .text-zinc-200,
+:root[data-theme="light"] .org-create-theme .text-zinc-300 {
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .org-create-theme .text-zinc-400,
+:root[data-theme="light"] .org-create-theme .text-zinc-500 {
+  color: #64748b !important;
+}
+
+:root[data-theme="light"] .org-create-theme .bg-zinc-700 {
+  background-color: #e2e8f0 !important;
+}
+
+:root[data-theme="light"] .org-create-theme .hover\:bg-zinc-900:hover,
+:root[data-theme="light"] .org-create-theme .hover\:bg-zinc-800:hover,
+:root[data-theme="light"] .org-create-theme .hover\:bg-zinc-700:hover {
+  background-color: #f1f5f9 !important;
+}
+
+:root[data-theme="light"] .org-create-theme input,
+:root[data-theme="light"] .org-create-theme textarea,
+:root[data-theme="light"] .org-create-theme button[role="combobox"] {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+:root[data-theme="light"] .org-create-theme input::placeholder,
+:root[data-theme="light"] .org-create-theme textarea::placeholder {
   color: #64748b !important;
 }
